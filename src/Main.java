@@ -1,28 +1,35 @@
 import javax.xml.namespace.QName;
 import java.util.Objects;
-
 public class Main {
     @Override
     public String toString() {
         return "Main{}";
     }
+
     @Override
+
     public boolean equals(Object obj) {
         return super.equals(obj);
     }
+
     public static void main(String[] args) {
+
 
         System.out.println("Домашняя работа № 12, 13");
 
+
         System.out.println("Задание № 1");
 
+
         System.out.println(" ");
+
 
 
         Book book = new Book(" Война и мир ", "  Лев Толстой", 1863);
         System.out.println("book.name = " + book.getName());
         System.out.println("book.author = " + book.getAuthor());
         System.out.println("book.yearOfPublication = " + book.getYearOfPublication());
+
 
         System.out.println(" ");
 
@@ -65,21 +72,28 @@ public class Main {
         Author author3 = new Author("Федор", "Достоевский");
         System.out.println("author3.name = " + author3.getName());
         System.out.println("author3.surname = " + author3.getSurname());
+
         System.out.println("**********************Задания по работе № 13*********************** ");
         System.out.println(" ");
+
         System.out.println("Использован метод  to String в классe Book   ");
+
         System.out.println(book);
         System.out.println(book2);
         System.out.println(book3);
         System.out.println(" ");
+
         System.out.println("Использован метод to String в классe Author  ");
+
         System.out.println(author);
         System.out.println(author2);
         System.out.println(author3);
 
         System.out.println(" ");
 
+
         System.out.println("Проверка метода (сгенерированного кодом) equals (Book) ");
+
 
         System.out.println(book.getYearOfPublication() == book.getYearOfPublication() && Objects.equals(book.getName(), book.getName()) && Objects.equals(book.getAuthor(), book.getAuthor()));
         System.out.println(book2.getYearOfPublication() == book2.getYearOfPublication() && Objects.equals(book2.getName(), book2.getName()) && Objects.equals(book2.getAuthor(), book2.getAuthor()));
@@ -87,7 +101,10 @@ public class Main {
 
         System.out.println(" ");
 
+
         System.out.println("Проверка метода hashCode  (Book)");
+
+
 
         System.out.println(Objects.hash(book.getName(), book.getAuthor(), book.getYearOfPublication()));
         System.out.println(Objects.hash(book.getName(), book.getAuthor(), book.getYearOfPublication()));
@@ -99,15 +116,21 @@ public class Main {
 
         System.out.println(" ");
 
+
+
         System.out.println("Проверка метода (сгенерированного кодом) equals  (Author)");
+
 
         System.out.println(Objects.equals(author.getName(), author.getName()) && Objects.equals(author.getSurname(), author.getSurname()));
         System.out.println(Objects.equals(author2.getName(), author2.getName()) && Objects.equals(author2.getSurname(), author2.getSurname()));
         System.out.println(Objects.equals(author3.getName(), author3.getName()) && Objects.equals(author3.getSurname(), author3.getSurname()));
 
+
         System.out.println(" ");
 
+
         System.out.println("Проверка метода hashCode (Author) ");
+
 
         System.out.println(Objects.hash(author.getName(), author.getSurname()));
         System.out.println(Objects.hash(author.getName(), author.getSurname()));
